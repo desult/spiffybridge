@@ -1,0 +1,9 @@
+
+{% block content %}
+    {{ page.content }}
+    {% for submodule in page.collection() %}
+      <div>
+        {{ submodule.content }}
+      </div>
+    {% endfor %}
+{% endblock %}

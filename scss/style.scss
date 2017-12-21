@@ -1,0 +1,163 @@
+@import 'variables';
+@import 'nav';
+
+body {
+  background-color: hsl($hue01, 10%, 55%);
+  background-image: url("../images/bgstripesthingrey2.svg"), linear-gradient(to right, hsl($hue01, 10%, 35%), hsl($hue01, 10%, 48%));
+  background-attachment: fixed;
+  color: hsl($hue01, 10%, 30%);
+  padding: 0px;
+  line-height: 1.4;
+  padding: 0px;}
+
+a:link    {	color: hsl($hue02, $saturation01, $brightness01);
+  			    text-decoration: none;}
+
+a:visited {	color: hsl($hue02, $saturation01, $brightness01);
+  			    text-decoration: none;}
+
+h1, h2, h3, h4, h5 {
+  font-family: sans-serif;
+  color: hsl($hue01, 10%, 30%);
+  text-align: center; }
+
+h1 { margin: 50px 80px; }
+h2 {   font-size: 2.2em; }
+h6 { margin: 0px 80px; }
+
+p {    font-family: sans-serif;
+       margin: 30px 80px; }
+
+hr { margin: 50px 0px;
+    border-color: hsl($hue01, 10%, 70%); }
+
+.main-nav {     background-color: hsl($hue01, 10%, 30%); }
+
+.allbox {       background-color: white;
+                width: 880px;
+                border-style: solid;
+                border-width: 15px;
+                border-color: white;
+                padding: 0px;
+                margin: 8px auto;
+                position: relative;
+                z-index: 10;
+                box-shadow: 0px 1px 5px hsla(215, 10%, 0%, .3); }
+
+.acrylic {      color: white;
+                margin: 20px auto;
+                width: 900px;
+                text-align: center;}
+
+.titlebox {     background-color: hsl($hue01, 10%, 30%); }
+
+.titlebox img { display: block;
+                padding: 60px 0px;
+                margin: auto;
+                width: 60%; }
+
+.contentbox {   background-color: hsl($hue01, 10%, 93%);
+                margin: 15px 0px;
+                box-shadow: 1px 4px 5px hsla(215, 10%, 30%, .3);
+                border: 4px hsl(215, 10%, 92%) solid; }
+
+.flexparent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0px; }
+
+.item {
+  background-color: white;
+  padding: 10px;
+  flex-grow: 1;
+  width: 29%;
+  margin: 5px; }
+
+.item p {
+  margin: 10px; }
+
+.itemblank {;
+  padding: 10px;
+  flex-grow: 1;
+  width: 29%;
+  margin: 5px; }
+
+.contentbox img {
+  outline: 10px solid white;
+  max-width: 100%;
+  max-height: 500px;
+  display: block;
+  margin: auto;
+  margin-top: 25px; }
+
+.contentbox a {
+  background-color: white;
+  color: hsl($hue02, 10%, 30%);
+  font-family: sans-serif;
+  font-size: 1.8em;
+  display: block;
+  border: 1px dashed hsla($hue02, 50%, 60%, .1);
+  padding: 0px;
+  margin: 3px 0px auto;
+  text-align: center; }
+
+.contentbox a:link {
+  color: hsl($hue02, 80%, 50%); }
+
+.contentbox a:visited {
+  color: hsl($hue02, 80%, 50%); }
+
+.contentbox a:hover {
+  box-shadow: 0px 6px 12px hsla(215, 10%, 30%, .3);
+  background-color: hsl($hue02, 100%, 85%); }
+
+
+.left {             float: left; }
+.right {            float: right; }
+.text-center {      text-align: center; }
+.text-right {       text-align: right;  }
+.text-left {        text-align: left;   }
+.header .padding {  padding: 1rem 0;}
+.header {           background-color: #1F8DD6;    color: #eee; }
+.header a {         color: #fff; }
+.header .logo {     font-size: 1.7rem;
+                    text-transform: uppercase; }
+.footer {           background-color: #eee; }
+
+.videoWrapper {        position: relative;
+	                     padding-bottom: 56.25%; /* 16:9 */
+	                     padding-top: 25px;
+	                     height: 0;
+                       width: 82%;
+                       margin: 0 auto;
+                       margin-bottom: 50px;}
+.videoWrapper iframe { position: absolute;
+	                     top: 0;
+	                     left: 0;
+	                     width: 100%;
+	                     height: 100%;}
+
+
+@media only screen and (max-width: 940px) {
+p {             margin: 30px 50px; }
+h6 {            margin: 0px 50px; }
+.allbox {       width: 96%; }
+.btn-link {     margin: 15px 50px auto;
+                font-size: 1.4em;}
+.titlebox img { width: 70%; }
+.acrylic {      width: 96%;} }
+
+@media only screen and (max-width: 500px) {
+h2 {            font-size: 1.4em; }
+p {             margin: 30px 0px; }
+h6 {            margin: 0px 0px; }
+.allbox {       border-width: 5px; }
+.flexparent {   flex-direction: column;
+                flex-wrap: nowrap; }
+.item {         width: 95%; }
+.itemblank {    display: none;}
+.btn-link {     margin: 15px 0px auto; }
+.titlebox img { width: 90%; }
+.btn-link {     font-size: 1em; }
+.img-one {      width: 90%; }
+.videoWrapper { width: 100%; } }

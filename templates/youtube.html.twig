@@ -1,0 +1,15 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  <div class="contentbox {{ page.header.class }}">
+    <h2>{{ page.title }}</h2>
+    {{ page.content }}
+
+    {% for entry in page.header.videos %}
+      <div class="videoWrapper">
+        {{ entry.iframecode }}
+      </div>
+    {% endfor %}
+
+  </div>
+{% endblock %}
