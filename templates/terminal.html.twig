@@ -1,0 +1,19 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  <div class="contentbox {{ page.header.class }}">
+    <h2>{{ page.header.title }} {% if page.header.subtitle %} - {{ page.header.subtitle }}{% endif %}</h2>
+    <h4>{{ page.header.address }}</h4>
+    <p><a href="tel://{{ page.header.phone }}">{{ page.header.phone }}</a></p>
+
+    {{ page.content }}
+
+    {{ page.header.map }} {{ page.header.map2 }}
+
+    {% if page.header.latitute and page.header.longitude %}
+     <iframe id="forecast_embed" frameborder="0" height="245" width="100%" src="//forecast.io/embed/#lat={{ page.header.latitude }}&lon={{ page.header.longitude }}&name={{ page.header.subtitle }}"></iframe>
+     <h3>{{ page.header.latitute }} {{ page.header.longitude }}</h3>
+    {% endif %}
+
+  </div>
+{% endblock %}
