@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#67686B;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'OpenSans-Italic';}
+	.st3{font-size:46.8234px;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<rect class="st0" width="300" height="300"/>
+<text transform="matrix(1 0 0 1 21.1213 218.2383)" class="st1 st2 st3">Spiffy Bridge</text>
+<line class="st4" x1="17" y1="129.3" x2="275" y2="129.3"/>
+<g>
+	<path class="st4" d="M85.3,96.9c0,17.9-14.5,32.4-32.4,32.4"/>
+	<path class="st4" d="M150,96.9c0,17.9-14.5,32.4-32.4,32.4s-32.4-14.5-32.4-32.4"/>
+	<path class="st4" d="M214.7,96.9c0,17.9-14.5,32.4-32.4,32.4S150,114.8,150,96.9"/>
+	<path class="st4" d="M247.1,129.3c-17.9,0-32.4-14.5-32.4-32.4"/>
+</g>
+</svg>
