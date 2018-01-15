@@ -21,7 +21,7 @@
 
 /*Active dropdown nav item */
 .main-nav ul li:hover > a {
-    background-color: hsl($hue02, $saturation01, $brightness01);
+    background-color: $swatch02;
     color: white;
 }
 

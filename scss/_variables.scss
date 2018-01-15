@@ -1,6 +1,11 @@
 $snow: #f4f4f4;
-$hue01: 215;
-$hue02: 35;
 
-$saturation01: 80%;
-$brightness01: 55%;
+$hue01: 215;
+$saturation01: 10%;
+$lightness01: 30%;
+$swatch01: hsl($hue01, $saturation01, $lightness01);
+
+$hue02: 35;
+$saturation02: 80%;
+$lightness02: 55%;
+$swatch02: hsl($hue02, $saturation02, $lightness02);

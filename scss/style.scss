@@ -2,23 +2,23 @@
 @import 'nav';
 
 body {
-  background-color: hsl($hue01, 10%, 55%);
-  background-image: url("../images/bgstripesthingrey2.svg"), linear-gradient(to right, hsl($hue01, 10%, 35%), hsl($hue01, 10%, 48%));
+  background-color: $swatch01;
+  background-image: url("../images/bgstripesthingrey2.svg"), linear-gradient(to right, hsl($hue01, $saturation01, 35%), hsl($hue01, $saturation01, 48%));
   background-attachment: fixed;
-  color: hsl($hue01, 10%, 30%);
+  color: $swatch01;
   padding: 0px;
   line-height: 1.4;
   padding: 0px;}
 
-a:link    {	color: hsl($hue02, $saturation01, $brightness01);
+a:link    {	color: $swatch02;
   			    text-decoration: none;}
 
-a:visited {	color: hsl($hue02, $saturation01, $brightness01);
+a:visited {	color: $swatch02;
   			    text-decoration: none;}
 
 h1, h2, h3, h4, h5 {
   font-family: sans-serif;
-  color: hsl($hue01, 10%, 30%);
+  color: $swatch01;
   text-align: center; }
 
 h1 { margin: 50px 80px; }
@@ -29,10 +29,10 @@ h6 { margin: 0px 80px; }
 p {    font-family: sans-serif;
        margin: 30px 80px; }
 
-hr { margin: 50px 0px;
-    border-color: hsl($hue01, 10%, 70%); }
+hr {            margin: 50px 0px;
+                border-color: $swatch01; }
 
-.main-nav {     background-color: hsl($hue01, 10%, 30%); }
+.main-nav {     background-color: $swatch01; }
 
 .allbox {       background-color: white;
                 width: 880px;
@@ -50,7 +50,7 @@ hr { margin: 50px 0px;
                 width: 900px;
                 text-align: center;}
 
-.titlebox {     background-color: hsl($hue01, 10%, 30%); }
+.titlebox {     background-color: $swatch01; }
 
 .titlebox img { display: block;
                 padding: 60px 0px;
@@ -93,24 +93,22 @@ hr { margin: 50px 0px;
 
 .contentbox a {
   background-color: white;
-  color: hsl($hue02, 10%, 30%);
-  font-family: sans-serif;
   font-size: 1.8em;
   display: block;
-  border: 1px dashed hsla($hue02, 50%, 60%, .1);
   padding: 0px;
   margin: 3px 0px auto;
   text-align: center; }
 
 .contentbox a:link {
-  color: hsl($hue02, 80%, 50%); }
+  color: $swatch02; }
 
 .contentbox a:visited {
-  color: hsl($hue02, 80%, 50%); }
+  color: $swatch02; }
 
 .contentbox a:hover {
   box-shadow: 0px 6px 12px hsla(215, 10%, 30%, .3);
-  background-color: hsl($hue02, 100%, 85%); }
+  color: white;
+  background-color: $swatch02; }
 
 
 .left {             float: left; }
