@@ -1,28 +1,22 @@
 /* Menu Settings */
 .main-nav ul {
-    text-align: center;
-    letter-spacing: -1em;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
 .main-nav ul li {
-    display: inline-block;
-    letter-spacing: normal;
-}
-
-.main-nav ul li a {
-    position: relative;
-    display: block;
-    line-height: 45px;
-    color: hsl($hue02, $saturation01, 55%);
-    padding: 0 20px;
+    text-align: center;
+    list-style: none;
     white-space: nowrap;
 }
 
-.main-nav > ul > li > a {
-    border-top-left-radius:  10px;
-    border-top-right-radius: 10px;
+.main-nav ul li a {
+    display: block;
+    line-height: 45px;
+    padding: 0 20px;
 }
 
 /*Active dropdown nav item */
