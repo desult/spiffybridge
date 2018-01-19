@@ -10,9 +10,9 @@
 
     {{ page.header.map }} {{ page.header.map2 }}
 
-    {% if page.header.latitute and page.header.longitude %}
+    {% if page.header.latitude and page.header.longitude %}
      <iframe id="forecast_embed" frameborder="0" height="245" width="100%" src="//forecast.io/embed/#lat={{ page.header.latitude }}&lon={{ page.header.longitude }}&name={{ page.header.subtitle }}"></iframe>
-     <h3>{{ page.header.latitute }} {{ page.header.longitude }}</h3>
+     <h3>{{ page.header.latitude }} {{ page.header.longitude }}</h3>
     {% endif %}
 
   </div>
