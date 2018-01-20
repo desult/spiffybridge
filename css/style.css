@@ -204,14 +204,6 @@ hr {
   margin: auto;
   margin-top: 25px; }
 
-.markdown a {
-  background-color: white;
-  font-size: 1.8em;
-  display: block;
-  padding: 0px;
-  margin: 3px 0px auto;
-  text-align: center; }
-
 .markdown a:link {
   color: #e89c30; }
 
@@ -222,6 +214,16 @@ hr {
   box-shadow: 0px 6px 12px rgba(69, 75, 84, 0.3);
   color: white;
   background-color: #e89c30; }
+
+.blockanchors a {
+  display: block;
+  background-color: white;
+  text-align: center;
+  padding: 10px; }
+
+.blockanchors a:hover {
+  background-color: #e89c30;
+  color: white; }
 
 .left {
   float: left; }

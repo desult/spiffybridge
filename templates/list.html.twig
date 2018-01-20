@@ -5,10 +5,10 @@
     {{ page.content }}
   </div>
 
+  <div class="blockanchors {{ page.header.class }}">
     {% for child in page.collection %}
       <a href="{{child.url}}">{{ child.title }} {% if child.header.subtitle %} - {{ child.header.subtitle }} {% endif %}</a> {{ child.summery }}
-      <br>
     {% endfor %}
-
+  </div>
 
 {% endblock %}

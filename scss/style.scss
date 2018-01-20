@@ -109,14 +109,6 @@ hr {            margin: 50px 0px;
   margin: auto;
   margin-top: 25px; }
 
-.markdown a {
-  background-color: white;
-  font-size: 1.8em;
-  display: block;
-  padding: 0px;
-  margin: 3px 0px auto;
-  text-align: center; }
-
 .markdown a:link {
   color: $swatch02; }
 
@@ -128,6 +120,13 @@ hr {            margin: 50px 0px;
   color: white;
   background-color: $swatch02; }
 
+.blockanchors a {        display: block;
+                         background-color: white;
+                         text-align: center;
+                         padding: 10px;}
+
+.blockanchors a:hover {  background-color: $swatch02;
+                         color: white;}
 
 .left {             float: left; }
 .right {            float: right; }
