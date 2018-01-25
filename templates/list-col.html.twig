@@ -9,7 +9,7 @@
   <div class="gridcols">
     {% for item in page.header.columns %}
         <div>
-          <h4>{{ item }}</h4>
+          <h3>{{ item }}</h3>
           <ul>
           {% for child in page.collection %}
             {% if child.header.column == item %}
@@ -20,7 +20,7 @@
                     - {{ child.header.subtitle }}
                   {% endif %}
                 </a>
-              </li>  
+              </li>
             {% endif %}
           {% endfor %}
         </ul>

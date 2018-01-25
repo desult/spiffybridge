@@ -1,0 +1,43 @@
+.module > div:first-child { padding-top: 30px; }
+.module > div:last-child { padding-bottom: 30px; }
+.moduleimage {  width: 70%;
+                margin: 0 auto;}
+.moduleimage img {  width: 100%;}
+.module {   padding: 20px 0px 20px 0px;}
+.module:first-child { padding: 0px;}
+
+
+.flexey { display: flex; }
+.flexey:nth-child(even) { flex-direction: row-reverse;}
+
+
+.card h2 {  text-align: left;
+            margin-left: 30px;}
+.card {     width: 70%;
+            margin: 5px 0px;}
+.card h2 {  font-size: 3em;
+            margin: 0px 30px;}
+.card p {   font-family: oswald_regularregular;
+            font-size: 2em;
+            margin: 10px 70px;}
+.card ul {  padding-left: 12px;}
+.card li {  font-family: oswald_regularregular, sans-serif;
+            list-style: none;
+            font-size: 3em;}
+
+
+@media only screen and (max-width: 940px) {
+.card h2 {  font-size: 2em;
+            margin: 0px 30px; }
+.card p {   font-size: 1.5em;
+            margin: 10px 70px;}
+.card li {  font-size: 2em;}            
+}
+
+@media only screen and (max-width: 640px) {
+}
+
+
+
+@media only screen and (max-width: 500px) {
+}

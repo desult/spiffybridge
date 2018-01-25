@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'nav';
+@import 'fonts';
+@import 'intro';
 
 body {
   background-color: $swatch01;
@@ -17,9 +19,10 @@ a:visited {	color: $swatch02;
   			    text-decoration: none;}
 
 h1, h2, h3, h4, h5 {
-  font-family: sans-serif;
+  font-family: oswald_regularregular, sans-serif;
   color: $swatch01;
-  text-align: center; }
+  text-align: center;
+  font-weight: normal;}
 
 h1 { margin: 50px 80px; }
 h2 { font-size: 2.2em; }
@@ -66,7 +69,8 @@ hr {            margin: 50px 0px;
                 padding: 20px;
                 box-shadow: 0px 1px 5px hsla(215, 10%, 0%, .3) }
 
-.gridcols h4 {  padding: 8px;
+.gridcols h3 {  padding: 0px 0px 8px 0px;
+                margin-top: 0px;
                 margin-bottom: 16px;
                 border-bottom: 1px solid $swatch01; }
 

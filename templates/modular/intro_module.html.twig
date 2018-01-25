@@ -1,0 +1,37 @@
+{% for entry in page.header.layout %}
+
+  {% if entry.image %}
+    <div class="moduleimage" style="text-align: {{ entry.align }}">
+      <img src="{{ page.url }}/{{ entry.image }}" width="100%">
+    </div>
+  {% endif %}
+
+  {% if entry.text %}
+    <div class="flexey">
+        <div class="card" style="background-color: {{ entry.cardcolor }}">
+          <h2 style="color: {{ entry.textcolor }}">{{ entry.text }}</h2>
+        </div>
+    </div>
+  {% endif %}
+
+  {% if entry.longtext %}
+    <div class="flexey">
+        <div class="card" style="background-color: {{ entry.cardcolor }}">
+          <p style="color: {{ entry.textcolor }}">{{ entry.longtext }}</p>
+        </div>
+    </div>
+  {% endif %}
+
+  {% if entry.list %}
+    <div class="flexey">
+        <div class="card" style="background-color: {{ entry.cardcolor }}">
+          <ul style="{{ entry.bgcolor }}">
+            {% for listed in entry.list %}
+              <li style="color: {{ entry.textcolor }}"><i class="fa fa-check"> </i> {{ listed }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+    </div>
+  {% endif %}
+
+{% endfor %}
