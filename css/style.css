@@ -185,6 +185,9 @@ p {
   font-family: sans-serif;
   margin: 30px 80px; }
 
+.markdown ul {
+  margin: 0px 0px 0px 100px; }
+
 hr {
   margin: 50px 0px;
   border-color: #454b54; }
@@ -265,6 +268,9 @@ hr {
   margin: 15px 0px;
   box-shadow: 1px 4px 5px rgba(69, 75, 84, 0.3);
   border: 4px #e9eaed solid; }
+
+.contentbox iframe {
+  margin-top: 20px; }
 
 .markdown {
   margin: 0px 0px 50px 0px; }
