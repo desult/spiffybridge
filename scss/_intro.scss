@@ -27,17 +27,23 @@
 
 
 @media only screen and (max-width: 940px) {
+.module > div:first-child { padding-top: 15px; }
+.module > div:last-child { padding-bottom: 15px; }
+.module {   padding: 15px 0px 15px 0px;}
+.card {     width: 80%;}
 .card h2 {  font-size: 2em;
             margin: 0px 30px; }
 .card p {   font-size: 1.5em;
-            margin: 10px 70px;}
-.card li {  font-size: 2em;}            
-}
+            margin: 10px 60px;}
+.card li {  font-size: 2em;} }
 
 @media only screen and (max-width: 640px) {
-}
-
-
+.module {   padding: 12px 0px 12px 0px;}
+.card {     width: 85%;}
+.card p {  font-size: 1.3em;
+           margin: 10px 40px;} }
 
 @media only screen and (max-width: 500px) {
-}
+.module {   padding: 8px 0px 8px 0px;}
+.card {     width: 90%;}
+.card h2 {  font-size: 1.5em;} }

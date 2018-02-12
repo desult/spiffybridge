@@ -136,16 +136,47 @@
   font-size: 3em; }
 
 @media only screen and (max-width: 940px) {
+  .module > div:first-child {
+    padding-top: 15px; }
+
+  .module > div:last-child {
+    padding-bottom: 15px; }
+
+  .module {
+    padding: 15px 0px 15px 0px; }
+
+  .card {
+    width: 80%; }
+
   .card h2 {
     font-size: 2em;
     margin: 0px 30px; }
 
   .card p {
     font-size: 1.5em;
-    margin: 10px 70px; }
+    margin: 10px 60px; }
 
   .card li {
     font-size: 2em; } }
+@media only screen and (max-width: 640px) {
+  .module {
+    padding: 12px 0px 12px 0px; }
+
+  .card {
+    width: 85%; }
+
+  .card p {
+    font-size: 1.3em;
+    margin: 10px 40px; } }
+@media only screen and (max-width: 500px) {
+  .module {
+    padding: 8px 0px 8px 0px; }
+
+  .card {
+    width: 90%; }
+
+  .card h2 {
+    font-size: 1.5em; } }
 body {
   background-color: #454b54;
   background-image: url("../images/bgstripesthingrey2.svg"), linear-gradient(to right, #505862, #6e7887);
@@ -277,7 +308,7 @@ hr {
 
 .markdown img {
   outline: 10px solid white;
-  max-width: 100%;
+  max-width: 85%;
   max-height: 500px;
   display: block;
   margin: auto;
@@ -361,7 +392,7 @@ hr {
     margin: 0px 50px; }
 
   .allbox {
-    width: 96%; }
+    width: 92%; }
 
   .btn-link {
     margin: 15px 50px auto;
@@ -371,7 +402,7 @@ hr {
     width: 70%; }
 
   .acrylic {
-    width: 96%; } }
+    width: 92%; } }
 @media only screen and (max-width: 640px) {
   .gridcols {
     grid-template-columns: 1fr; } }
@@ -386,7 +417,7 @@ hr {
     margin: 0px 0px; }
 
   .allbox {
-    border-width: 5px; }
+    border-width: 6px; }
 
   .flexparent {
     flex-direction: column;
