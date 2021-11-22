@@ -1,0 +1,31 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+  <div class="markdown {{ page.header.class }}">
+    {{ page.content }}
+  </div>
+
+  <div class="gridcols">
+    {% for item in page.header.columns %}
+        <div>
+          <h3>{{ item }}</h3>
+          <ul>
+          {% for child in page.collection %}
+            {% if child.header.column == item %}
+              <li>
+                <a href="{{child.url}}">
+                  {{ child.title }}
+                  {% if child.header.subtitle %}
+                    - {{ child.header.subtitle }}
+                  {% endif %}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

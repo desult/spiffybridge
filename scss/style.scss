@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'nav';
+@import 'fonts';
+@import 'intro';
 
 body {
   background-color: $swatch01;
@@ -17,9 +19,10 @@ a:visited {	color: $swatch02;
   			    text-decoration: none;}
 
 h1, h2, h3, h4, h5 {
-  font-family: sans-serif;
+  font-family: oswald_regularregular, sans-serif;
   color: $swatch01;
-  text-align: center; }
+  text-align: center;
+  font-weight: normal;}
 
 h1 { margin: 50px 80px; }
 h2 { font-size: 2.2em; }
@@ -28,6 +31,8 @@ h6 { margin: 0px 80px; }
 
 p {    font-family: sans-serif;
        margin: 30px 80px; }
+
+.markdown ul {   margin: 0px 0px 0px 100px;}
 
 hr {            margin: 50px 0px;
                 border-color: $swatch01; }
@@ -57,10 +62,21 @@ hr {            margin: 50px 0px;
                 margin: auto;
                 width: 60%; }
 
-.contentbox {   background-color: hsl($hue01, 10%, 93%);
-                margin: 15px 0px;
-                box-shadow: 1px 4px 5px hsla(215, 10%, 30%, .3);
-                border: 4px hsl(215, 10%, 92%) solid; }
+.gridcols    {  display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+                margin: 20px; }
+
+.gridcols div { background-color: white;
+                padding: 20px;
+                box-shadow: 0px 1px 5px hsla(215, 10%, 0%, .3) }
+
+.gridcols h3 {  padding: 0px 0px 8px 0px;
+                margin-top: 0px;
+                margin-bottom: 16px;
+                border-bottom: 1px solid $swatch01; }
+
+.gridcols li {  list-style: none; }
 
 .flexparent {
   display: flex;
@@ -83,33 +99,42 @@ hr {            margin: 50px 0px;
   width: 29%;
   margin: 5px; }
 
-.contentbox img {
+.contentbox {
+  background-color: hsl($hue01, 10%, 93%);
+  margin: 15px 0px;
+  box-shadow: 1px 4px 5px hsla(215, 10%, 30%, .3);
+  border: 4px hsl(215, 10%, 92%) solid; }
+
+.contentbox iframe { margin-top: 20px;}
+
+.markdown { margin: 0px 0px 50px 0px; }
+
+.markdown img {
   outline: 10px solid white;
-  max-width: 100%;
+  max-width: 85%;
   max-height: 500px;
   display: block;
   margin: auto;
   margin-top: 25px; }
 
-.contentbox a {
-  background-color: white;
-  font-size: 1.8em;
-  display: block;
-  padding: 0px;
-  margin: 3px 0px auto;
-  text-align: center; }
-
-.contentbox a:link {
+.markdown a:link {
   color: $swatch02; }
 
-.contentbox a:visited {
+.markdown a:visited {
   color: $swatch02; }
 
-.contentbox a:hover {
+.markdown a:hover {
   box-shadow: 0px 6px 12px hsla(215, 10%, 30%, .3);
   color: white;
   background-color: $swatch02; }
 
+.blockanchors a {        display: block;
+                         background-color: white;
+                         text-align: center;
+                         padding: 10px;}
+
+.blockanchors a:hover {  background-color: $swatch02;
+                         color: white;}
 
 .left {             float: left; }
 .right {            float: right; }
@@ -140,17 +165,22 @@ hr {            margin: 50px 0px;
 @media only screen and (max-width: 940px) {
 p {             margin: 30px 50px; }
 h6 {            margin: 0px 50px; }
-.allbox {       width: 96%; }
+.allbox {       width: 92%; }
 .btn-link {     margin: 15px 50px auto;
                 font-size: 1.4em;}
 .titlebox img { width: 70%; }
-.acrylic {      width: 96%;} }
+.acrylic {      width: 92%;} }
+
+@media only screen and (max-width: 640px) {
+.gridcols    {  grid-template-columns: 1fr;} }
+
+
 
 @media only screen and (max-width: 500px) {
 h2 {            font-size: 1.4em; }
 p {             margin: 30px 0px; }
 h6 {            margin: 0px 0px; }
-.allbox {       border-width: 5px; }
+.allbox {       border-width: 6px; }
 .flexparent {   flex-direction: column;
                 flex-wrap: nowrap; }
 .item {         width: 95%; }

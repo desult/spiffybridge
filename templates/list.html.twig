@@ -1,15 +1,15 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-  <div class="contentbox {{ page.header.class }}">
-    {{ page.content|raw }}
 
-    <p>
+  <div class="markdown {{ page.header.class }}">
+    {{ page.content|raw }}
+  </div>
+
+  <div class="blockanchors {{ page.header.class }}">
     {% for child in page.collection %}
       <a href="{{child.url}}">{{ child.title }} {% if child.header.subtitle %} - {{ child.header.subtitle }} {% endif %}</a> {{ child.summery }}
     {% endfor %}
-    </p>
-
   </div>
 
 {% endblock %}
