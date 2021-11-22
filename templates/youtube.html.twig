@@ -3,11 +3,11 @@
 {% block content %}
   <div class="contentbox {{ page.header.class }}">
     <h2>{{ page.title }}</h2>
-    {{ page.content }}
+    {{ page.content|raw }}
 
     {% for entry in page.header.videos %}
       <div class="videoWrapper">
-        {{ entry.iframecode }}
+        {{ entry.iframecode|raw }}
       </div>
     {% endfor %}
 

@@ -1,10 +1,17 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+
 <head>
 {% block head %}
     <meta charset="utf-8" />
-    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    <title>
+        {{ site.title|e('html') }}
+        {% if header.title == "Home" %}
+        {% elseif header.title %}
+            | {{ header.title|e('html') }}
+        {% endif %}
+    </title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,17 +28,21 @@
         {% do assets.addCss('theme://css/style.css', 98) %}
         {% do assets.addCss('theme://css/custom.css', 97) %}
     {% endblock %}
-    {{ assets.css() }}
 
     {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
     {% endblock %}
-    {{ assets.js() }}
+
+    {% block assets deferred %}
+        {{ assets.css()|raw }}
+        {{ assets.js()|raw }}
+    {% endblock %}
 
 {% endblock head %}
 </head>
-<body>
 
+
+<body>
 
 {% block body %}
   <div class="allbox">
@@ -43,7 +54,8 @@
     {% endblock %}
 
     {% block header_navigation %}
-      <nav class="main-nav"> {% include 'partials/navigation.html.twig' %}
+      <nav class="main-nav">
+          {% include 'partials/navigation.html.twig' %}
       </nav>
     {% endblock %}
 

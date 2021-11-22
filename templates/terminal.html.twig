@@ -6,9 +6,9 @@
     <h4>{{ page.header.address }}</h4>
     <p><a href="tel://{{ page.header.phone }}">{{ page.header.phone }}</a></p>
 
-    {{ page.content }}
+    {{ page.content|raw }}
 
-    {{ page.header.map }} {{ page.header.map2 }}
+    {{ page.header.map|raw }} {{ page.header.map2|raw }}
 
     {% if page.header.latitute and page.header.longitude %}
      <iframe id="forecast_embed" frameborder="0" height="245" width="100%" src="//forecast.io/embed/#lat={{ page.header.latitude }}&lon={{ page.header.longitude }}&name={{ page.header.subtitle }}"></iframe>

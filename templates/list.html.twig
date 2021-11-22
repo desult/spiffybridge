@@ -2,11 +2,11 @@
 
 {% block content %}
   <div class="contentbox {{ page.header.class }}">
-    {{ page.content }}
+    {{ page.content|raw }}
 
     <p>
     {% for child in page.collection %}
-      <a href="{{child.url}}">{{ child.title }} {% if child.header.subtitle %} - {{ child.header.subtitle }} {% endif %}</a> {{ child.summery }} 
+      <a href="{{child.url}}">{{ child.title }} {% if child.header.subtitle %} - {{ child.header.subtitle }} {% endif %}</a> {{ child.summery }}
     {% endfor %}
     </p>
 
