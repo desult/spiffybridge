@@ -2,8 +2,8 @@
 
 {% block content %}
 
-  <div class="markdown {{ page.header.class }}">
+  <div class="{{ page.header.class }}">
     {{ page.content|raw }}
   </div>
-  
+
 {% endblock %}

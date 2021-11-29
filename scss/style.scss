@@ -19,10 +19,10 @@ a:visited {	color: $swatch02;
   			    text-decoration: none;}
 
 h1, h2, h3, h4, h5 {
-  font-family: oswald_regularregular, sans-serif;
+  font-family: sans-serif;
   color: $swatch01;
   text-align: center;
-  font-weight: normal;}
+  font-weight: 600;}
 
 h1 { margin: 50px 80px; }
 h2 { font-size: 2.2em; }
@@ -104,6 +104,19 @@ hr {            margin: 50px 0px;
   margin: 15px 0px;
   box-shadow: 1px 4px 5px hsla(215, 10%, 30%, .3);
   border: 4px hsl(215, 10%, 92%) solid; }
+
+ .contentbox a {
+      background-color: white;
+      font-size: 1.8em;
+      display: block;
+      padding: 0px;
+      margin: 3px 0px auto;
+      text-align: center; }
+
+.contentbox a:hover {
+      box-shadow: 0px 6px 12px hsl($hue01, 10%, 93%);
+      color: white;
+      background-color: $swatch02; }
 
 .contentbox iframe { margin-top: 20px;}
 

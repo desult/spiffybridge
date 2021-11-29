@@ -1,7 +1,7 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-  <div class="markdown blockanchors{{ page.header.class }}">
+  <div class="contentbox {{ page.header.class }}">
     <h2>{{ page.header.title }} {% if page.header.subtitle %} - {{ page.header.subtitle }}{% endif %}</h2>
     <h4>{{ page.header.address }}</h4>
     <p><a href="tel://{{ page.header.phone }}">{{ page.header.phone }}</a></p>

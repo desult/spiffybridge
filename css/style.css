@@ -195,10 +195,10 @@ a:visited {
   text-decoration: none; }
 
 h1, h2, h3, h4, h5 {
-  font-family: oswald_regularregular, sans-serif;
+  font-family: sans-serif;
   color: #454b54;
   text-align: center;
-  font-weight: normal; }
+  font-weight: 600; }
 
 h1 {
   margin: 50px 80px; }
@@ -300,6 +300,19 @@ hr {
   box-shadow: 1px 4px 5px rgba(69, 75, 84, 0.3);
   border: 4px #e9eaed solid; }
 
+.contentbox a {
+  background-color: white;
+  font-size: 1.8em;
+  display: block;
+  padding: 0px;
+  margin: 3px 0px auto;
+  text-align: center; }
+
+.contentbox a:hover {
+  box-shadow: 0px 6px 12px #ebedef;
+  color: white;
+  background-color: #00b32d; }
+
 .contentbox iframe {
   margin-top: 20px; }
 
@@ -314,25 +327,11 @@ hr {
   margin: auto;
   margin-top: 25px; }
 
-.contentbox a {
-  background-color: white;
-  font-size: 1.8em;
-  display: block;
-  padding: 0px;
-  margin: 3px 0px auto;
-  text-align: center; }
-
-.contentbox a:link {
-  color: #00b32d; }
-
-.contentbox a:visited {
-  color: #00b32d; }
-
 .markdown a:link {
-  color: #e89c30; }
+  color: #00b32d; }
 
 .markdown a:visited {
-  color: #e89c30; }
+  color: #00b32d; }
 
 .markdown a:hover {
   box-shadow: 0px 6px 12px rgba(69, 75, 84, 0.3);
@@ -346,7 +345,7 @@ hr {
   padding: 10px; }
 
 .blockanchors a:hover {
-  background-color: #e89c30;
+  background-color: #00b32d;
   color: white; }
 
 .left {
