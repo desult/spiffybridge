@@ -178,6 +178,7 @@
   .card h2 {
     font-size: 1.5em; } }
 body {
+  font-family: sans-serif;
   background-color: #454b54;
   background-image: url("../images/bgstripesthingrey2.svg"), linear-gradient(to right, #505862, #6e7887);
   background-attachment: fixed;
@@ -195,7 +196,6 @@ a:visited {
   text-decoration: none; }
 
 h1, h2, h3, h4, h5 {
-  font-family: sans-serif;
   color: #454b54;
   text-align: center;
   font-weight: 600; }
@@ -213,7 +213,6 @@ h6 {
   margin: 0px 80px; }
 
 p {
-  font-family: sans-serif;
   margin: 30px 80px; }
 
 .markdown ul {

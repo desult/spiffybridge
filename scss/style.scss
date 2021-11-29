@@ -4,35 +4,33 @@
 @import 'intro';
 
 body {
+  font-family: sans-serif;
   background-color: $swatch01;
   background-image: url("../images/bgstripesthingrey2.svg"), linear-gradient(to right, hsl($hue01, $saturation01, 35%), hsl($hue01, $saturation01, 48%));
   background-attachment: fixed;
   color: $swatch01;
   padding: 0px;
   line-height: 1.4;
-  padding: 0px;}
+  padding: 0px; }
 
 a:link    {	color: $swatch02;
-  			    text-decoration: none;}
+  			text-decoration: none; }
 
 a:visited {	color: $swatch02;
-  			    text-decoration: none;}
+  			text-decoration: none; }
 
 h1, h2, h3, h4, h5 {
-  font-family: sans-serif;
   color: $swatch01;
   text-align: center;
-  font-weight: 600;}
+  font-weight: 600; }
 
 h1 { margin: 50px 80px; }
-h2 { font-size: 2.2em; }
-h4 { margin: 0px; }
-h6 { margin: 0px 80px; }
+h2 { font-size: 2.2em;  }
+h4 { margin: 0px;       }
+h6 { margin: 0px 80px;  }
+p  { margin: 30px 80px; }
 
-p {    font-family: sans-serif;
-       margin: 30px 80px; }
-
-.markdown ul {   margin: 0px 0px 0px 100px;}
+.markdown ul {  margin: 0px 0px 0px 100px; }
 
 hr {            margin: 50px 0px;
                 border-color: $swatch01; }
