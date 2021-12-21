@@ -11,19 +11,21 @@
 .flexey:nth-child(even) { flex-direction: row-reverse;}
 
 
-.card h2 {  text-align: left;
-            margin-left: 30px;}
+
 .card {     width: 70%;
-            margin: 5px 0px;}
-.card h2 {  font-size: 3em;
-            margin: 0px 30px;}
+            margin: 5px 0px; }
+.card h2 {  font-family: oswald_regularregular;
+            text-align: left;
+            font-size: 3em;
+            margin: 0px 30px;
+            font-weight: 400; }
 .card p {   font-family: oswald_regularregular;
             font-size: 2em;
-            margin: 10px 70px;}
-.card ul {  padding-left: 12px;}
+            margin: 10px 70px; }
+.card ul {  padding-left: 12px; }
 .card li {  font-family: oswald_regularregular, sans-serif;
             list-style: none;
-            font-size: 3em;}
+            font-size: 3em; }
 
 
 @media only screen and (max-width: 940px) {

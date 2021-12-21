@@ -1,17 +1,19 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    {{ page.content }}
-    {% for module in page.collection %}
-      <div
-        class="module"
-        style="background-color: {{ module.header.bgcolor }};
-        {% if module.header.bgimage %}
-        background-image: url('{{ module.header.bgimage }}');
-        background-size: cover;
-        {% endif %}
-        ">
-        {{ module.content }}
-      </div>
-    {% endfor %}
+    <div class="contentbox">
+        {{ page.content }}
+        {% for module in page.collection %}
+        <div
+            class="module"
+            style="background-color: {{ module.header.bgcolor }};
+            {% if module.header.bgimage %}
+            background-image: url('{{ module.header.bgimage }}');
+            background-size: cover;
+            {% endif %}
+            ">
+            {{ module.content }}
+        </div>
+        {% endfor %}
+    </div
 {% endblock %}

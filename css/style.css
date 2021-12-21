@@ -110,17 +110,16 @@
 .flexey:nth-child(even) {
   flex-direction: row-reverse; }
 
-.card h2 {
-  text-align: left;
-  margin-left: 30px; }
-
 .card {
   width: 70%;
   margin: 5px 0px; }
 
 .card h2 {
+  font-family: oswald_regularregular;
+  text-align: left;
   font-size: 3em;
-  margin: 0px 30px; }
+  margin: 0px 30px;
+  font-weight: 400; }
 
 .card p {
   font-family: oswald_regularregular;
