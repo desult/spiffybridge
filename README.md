@@ -29,12 +29,13 @@ layout:
 
 Spiffy Bridge is designed with theme Inheritance in mind. A sub-theme can be created that takes advantage of the variables in the SCSS. SCSS variables can change the color scheme. It is recommended that a sub-theme be created so that any future updates to the theme do not over-write the changes.
 
+The critical file is _variables.scss. The values in that file are designed to be edited to easily change the color scheme for the theme. There are a few other things that need to be in place for this to work.
+
 ### Creating a Sub-Theme
 
 1. Create a new empty folder in the themes folder next to spiffybridge and give it a name.
 2. Copy blueprints.yaml from spiffybridge.
-3. copy spiffybridge.yaml and rename it to have new theme name.
-
+3. copy spiffybridge.yaml and rename it to have new theme name.  
 Add this to newtheme.yaml:
 
 ```
@@ -48,8 +49,7 @@ streams:
          - user/themes/spiffybridge
 ```
 
-4. Create a scss folder in the new theme directory.
-
+4. Create a scss folder in the new theme directory.  
 In scss folder create _custom.scss and add:
 
 ```
@@ -76,8 +76,7 @@ Copy _fonts.scss from spiffybridge and edit it to:
 }
 ```
 
-Copy _variables.scss from spiffybridge. All values here are designed to be edited.
-
+Copy _variables.scss from spiffybridge. All values here are designed to be edited.  
 Create styles.scss. The file's contents should be as follows:
 
 ```
