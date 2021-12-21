@@ -1,6 +1,10 @@
-# spiffybridge
+# Spiffy Bridge
+
+Spiffy Bridge is a Grav theme! It was designed primarily as a theme for the trucking industry, but is versatile enough for other uses.
 
 ## Templates:
+
+Most of the templates in Spiffy Bridge are straight forward and easy to understand out of the box. On the other hand, a few of the templates need some explaining.
 
 ### intromod
 
